@@ -233,7 +233,7 @@ var ImageZoom = angular.module('ImageZoom', [])
             var offsetLeft = 0;
             var offsetTop = 0;
             if (el) {
-              if (!isNaN(el.offsetLeft)) {
+              while (!isNaN(el.offsetLeft)) {
                 offsetLeft += el.offsetLeft;
                 offsetTop += el.offsetTop;
               }
