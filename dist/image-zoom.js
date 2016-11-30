@@ -232,8 +232,8 @@ var ImageZoom = angular.module('ImageZoom', [])
           $scope.getOffset = function (el) {
             var offsetLeft = 0;
             var offsetTop = 0;
-            if (el) {
-              while (!isNaN(el.offsetLeft)) {
+            while (el) {
+              if (!isNaN(el.offsetLeft)) {
                 offsetLeft += el.offsetLeft;
                 offsetTop += el.offsetTop;
               }
