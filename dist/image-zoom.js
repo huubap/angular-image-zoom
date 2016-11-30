@@ -447,3 +447,4 @@ var ImageZoom = angular.module('ImageZoom', [])
       };
     }
   ]);
+
